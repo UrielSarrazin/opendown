@@ -3,9 +3,9 @@ package com.urielsarrazin.opendown;
 import java.util.ArrayList;
 import java.util.List;
 
-public class MarkdownToHtmlConverter {
+import static com.urielsarrazin.opendown.Properties.CARRIAGE_RETURN;
 
-    private static final String CARRIAGE_RETURN = "\n";
+public class MarkdownToHtmlConverter {
 
     private String markdown;
 
