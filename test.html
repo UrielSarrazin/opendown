@@ -1,0 +1,23 @@
+<hr class="page">
+
+Regex for parsing table header and delimiter!!
+[|]?(\s+[A-Za-z0-9 -_*#@$%:;?!.,\/\\]+\s+)[|]?[|]?(\s+[A-Za-z0-9 -_*#@$%:;?!.,\/\\]+\s+)[|]?[|]?(\s+[A-Za-z0-9 -_*#@$%:;?!.,\/\\]+\s+)[|]?\r?\n?\|?:-+:\|?:-+:\|?:-+:\|?
+—modifier - global
+
+Regex for delimiter between header and text
+\|?:-+:\|?:-+:\|?:-+:\|?\r?\n?
+-- modifier - global
+
+Regex for parsing ALL elements before and after header delimiter!
+[|]?(\s+[A-Za-z0-9 -_*#@$%:;?!.,\/\\]+\s+)[|]?[|]?(\s+[A-Za-z0-9 -_*#@$%:;?!.,\/\\]+\s+)[|]?[|]?(\s+[A-Za-z0-9 -_*#@$%:;?!.,\/\\]+\s+)[|]?\r?\n?
+
+—modifiers - global, multiline
+
+This is table, for parsing.
+
+
+| Tables        | Are           | Cool  |
+|:-------------:|:-------------:|:-----:|
+| col 3 is      |    r-l        | $1600 |
+| col 2 is      | centered      |   $12 |
+| zebra stripes | are neat      |    $1 |

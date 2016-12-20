@@ -3,9 +3,9 @@ package com.urielsarrazin.opendown;
 import java.util.ArrayList;
 import java.util.List;
 
-import static com.urielsarrazin.opendown.Properties.CARRIAGE_RETURN;
-
 public class MarkdownToHtmlConverter {
+
+    private static final String CARRIAGE_RETURN = "\n";
 
     private String markdown;
 
@@ -32,7 +32,7 @@ public class MarkdownToHtmlConverter {
 
     private void convertSplits() {
         for (String markdownSplit : markdownSplits) {
-            convertedSplits.add(new SimpleConverter(markdownSplit).convert());
+            convertedSplits.add(new Converter(markdownSplit).convert());
         }
     }
 
